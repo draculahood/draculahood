@@ -3,8 +3,8 @@
 // the token page, the buy buttons and every explorer link derive from it. Anything that is not a 0x + 40 hex
 // address is treated as "not launched yet".
 
-/** Contract address of $DRACULA. "TBA" until the owner publishes it (typed string so a real 0x value drops in). */
-const CA: string = "TBA";
+/** Contract address of $DRACULA (live since 28 Oct 2026; DRACULA HOOD/DRACULA, 18 decimals, 1B supply). */
+const CA: string = "0xe7e87a25c9e2f7762ceaaf2ff07accf701279b71";
 
 /**
  * True once the domain points at this deployment. While false, the production *.vercel.app host is served

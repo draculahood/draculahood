@@ -90,7 +90,7 @@ src/lib/              chain client, relay rules, nickname rules, art (crests, va
 
 - `DraculahoodCovenBook`: `0x52e7229001f29f1f98a6e305df55884376bc3eda` on Robinhood Chain, source verified on
   https://robinhoodchain.blockscout.com.
-- `$DRACULA`: launches on Pons; contract address published at launch.
+- `$DRACULA`: 0xe7e87a25c9e2f7762ceaaf2ff07accf701279b71 on Pons (live since 28 Oct 2026).
 
 ## Security and status
 

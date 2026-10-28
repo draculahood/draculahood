@@ -1,4 +1,4 @@
-import { BRAND, CHAIN, LAUNCHPAD } from "@/config/brand";
+import { BRAND, CHAIN, LAUNCHPAD, TOKEN } from "@/config/brand";
 
 /*
  * All long copy of the castle walk in one place, shared by the home page, the docs page and the structured data.
@@ -121,7 +121,7 @@ export type Qa = { q: string; a: string };
 export const FAQ: Qa[] = [
   { q: `What is ${N}?`, a: `${N} is a community memecoin on ${CHAIN.name} with a vampire castle theme. Besides the token there is a public on-chain guestbook (the Coven Ledger) and a vampire portrait maker. It promises no value and no returns.` },
   { q: `How does ${N} work?`, a: `${T} launches on ${LAUNCHPAD.name}'s bonding curve. Separately, any wallet can sign the Coven Ledger with a nickname and crest; that only costs gas and earns nothing.` },
-  { q: `How do I buy ${T}?`, a: `Get an EVM wallet, bridge a little ETH to ${CHAIN.name}, then use the Buy button here, which opens ${LAUNCHPAD.name}. Before launch the button opens the launchpad home and says "At launch".` },
+  { q: `How do I buy ${T}?`, a: `Get an EVM wallet, bridge a little ETH to ${CHAIN.name}, then use the Buy button here, which opens ${TOKEN.isLive ? `the ${T} page on ${LAUNCHPAD.name}` : `${LAUNCHPAD.name}. Before launch the button opens the launchpad home and says "At launch"`}.` },
   { q: `Which network is ${N} on?`, a: `${CHAIN.name} (chain id ${CHAIN.id}), an Ethereum layer 2 that charges fees in ETH.` },
   { q: "Does signing the ledger give me anything?", a: "No tokens, no allowance and no priority of any kind. It writes your nickname and crest into a public guestbook. You can change them later, and every change is public too." },
   { q: "What are the risks?", a: `${T} can lose all of its price. Fake tokens with the same name will appear: copy the address only from this site or ${BRAND.xHandle}, and never share your recovery phrase.` },
